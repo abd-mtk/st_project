@@ -1,0 +1,53 @@
+name: st_project
+description: "A Standerd Flutter Project"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  get: ^4.6.6
+  shared_preferences: ^2.2.2
+  internet_connection_checker: ^1.0.0+1
+  fpdart: ^1.1.0
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application.
+  assets:
+    - assets/
+    - assets/images/
+    - assets/languages/
+
+
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal/Tajawal-Black.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-Bold.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-ExtraBold.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-ExtraLight.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-Light.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-Medium.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-Regular.ttf
+    - family: Marhey
+      fonts:
+        - asset: assets/fonts/Marhey/Marhey-VariableFont_wght.ttf
+        - asset: assets/fonts/Marhey/static/Marhey-Bold.ttf
+        - asset: assets/fonts/Marhey/static/Marhey-Light.ttf
+        - asset: assets/fonts/Marhey/static/Marhey-Medium.ttf
+        - asset: assets/fonts/Marhey/static/Marhey-Regular.ttf
+        - asset: assets/fonts/Marhey/static/Marhey-SemiBold.ttf
