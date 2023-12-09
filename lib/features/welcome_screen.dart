@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../app/config/controller/config_controller.dart';
+import '../app/utils/services/notifications_services.dart';
 
 class WelcomeScreen extends StatelessWidget {
   WelcomeScreen({super.key});
@@ -22,12 +23,16 @@ class WelcomeScreen extends StatelessWidget {
                   onPressed: () {
                     configController.changeTheme('dark');
                     configController.changeLanguage('en');
+                    NotificationService().showNotification(
+                        title: "title", body: "body", payLoad: "payLoad");
                   },
                   child: Text("1".tr)),
               ElevatedButton(
                   onPressed: () {
                     configController.changeTheme('light');
                     configController.changeLanguage('ar');
+                    NotificationService().showNotification(
+                        title: "title", body: "body", payLoad: "payLoad");
                   },
                   child: Text("1".tr)),
             ],
