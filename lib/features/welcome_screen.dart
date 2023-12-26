@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:st_project/features/map.dart';
 
 import '../app/config/controller/config_controller.dart';
 import '../app/utils/services/notifications_services.dart';
@@ -35,6 +36,11 @@ class WelcomeScreen extends StatelessWidget {
                         title: "title", body: "body", payLoad: "payLoad");
                   },
                   child: Text("1".tr)),
+              ElevatedButton(
+                  onPressed: () {
+                    Get.toNamed(MapSample.routeName);
+                  },
+                  child: Text("3".tr)),
             ],
           ),
         ),

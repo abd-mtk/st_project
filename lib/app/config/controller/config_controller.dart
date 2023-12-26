@@ -23,6 +23,8 @@ class ConfigController extends GetxController {
     }
     if (appServices.sharedPreferences.getString('theme') == 'dark') {
       Get.changeTheme(dark);
+    } else {
+      Get.changeTheme(light);
     }
   }
 
@@ -31,6 +33,8 @@ class ConfigController extends GetxController {
       Get.updateLocale(const Locale('ar'));
     } else if (appServices.sharedPreferences.getString('lang') == 'en') {
       Get.updateLocale(const Locale('en'));
+    } else {
+      Get.updateLocale(Get.deviceLocale!);
     }
   }
 

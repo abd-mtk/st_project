@@ -1,8 +1,8 @@
 import os
 import json
 
-new_data_ar = {"2": "مرحبا بك في تطبيقي"}
-new_data_en = {"2": "welcome to my app"}
+new_data_ar = {"3": "الانتقال الى الخرائط"}
+new_data_en = {"3": "Go to the Maps"}
 
 folder_path = "assets\\languages"
 
